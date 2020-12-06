@@ -1,0 +1,64 @@
+header {
+    padding: 216px 0 200px;
+    opacity: 1;
+}
+section {
+    padding: 150px 0;
+}
+.font1{
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: 2px;
+    line-height:70px;
+}
+
+.text-1{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 55px;
+}
+
+.text-2{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 25px;
+  color:#000000;
+}
+
+.text-3{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 45px;
+  color:#000000;
+}
+
+.text-4{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 35px;
+  color:#000000;
+}
+
+.text-5{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  color:#000000;
+}
+
+.btn-1{
+  margin-top:50px;
+}
+
+.bg-black{
+  background-color:#000;
+}
+.main{
+    margin-bottom:50px;
+}
+
+.text-purple{
+  color:#e31ec9;
+}
+
+.text-161{
+  color:#a11ee3;
+}
+
+.text-green{
+  color:#0cab8b;
+}
