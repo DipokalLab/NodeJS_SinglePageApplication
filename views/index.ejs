@@ -41,7 +41,7 @@
                   <h1 class="text-light text-1 title" ></h1>
                   <h1 class="text-light text-1">플랫폼</h1>
 
-                  <button type="button" class="btn btn-light btn-pill btn-lg btn-1"><b><i class="fa fa-check mr-1"></i> 계정생성</b></button>
+                  <button type="button" class="btn btn-light btn-pill btn-lg btn-1" onclick="loadPage0()"><b><i class="fa fa-check mr-1"></i> Page0</b></button>
 
 
                 </div>
@@ -57,7 +57,7 @@
     </div>
 
 
-
+<root>
 
     <section id="services" class="bg-light">
         <div class="container">
@@ -75,6 +75,7 @@
 
         </div>
     </section>
+</root>
 
 
     <!-- Footer -->
@@ -94,16 +95,28 @@
     <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@0.2.1"></script>
     <script>
     function init() {
-        $.ajax({
-            url : "/init",
-            type: 'POST',
-            dataType:"json",
-            success:function(data){ 
-                $('.title').text(data.title)
-                //console.log(data)
+      $.ajax({
+          url : "/init",
+          type: 'POST',
+          dataType:"json",
+          success:function(data){ 
+              $('.title').text(data.title)
+              //console.log(data)
 
-            }
-        })
+          }
+      })
+    }
+
+    function loadPage0() {
+      
+      $.ajax({
+          url : "/page/0",
+          type: 'GET',
+          dataType:"html",
+          success:function(data){ 
+            $('root').html(data)
+          }
+      })
     }
 
     init()

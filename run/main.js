@@ -17,6 +17,19 @@ exports.load_init = function (req, res) {
     });
 }
 
+exports.load_page = function (req, res) {
+    switch (req.params.id) {
+        case '0':
+            res.render("page0");
+            break;
+    
+        default:
+            break;
+    }
+    
+
+}
+
 /*
 exports.load_login = function (req, res) {
     res.render("auth/login", {

@@ -17,6 +17,7 @@ app.set('views','./views');
 
 app.get('/', main.load_index);
 app.post('/init', main.load_init);
+app.get('/page/:id', main.load_page);
 
 
 server.listen(5004);
